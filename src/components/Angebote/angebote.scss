@@ -1,0 +1,57 @@
+.angebote{
+    padding: 200px 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    h1{
+        font-size: 45px;
+        font-weight: 600;
+        color: #000;
+
+        b{
+            font-weight: unset;
+            color: #E3B767;
+        }
+    }
+
+    h2{
+        font-size: 18px;
+        font-weight: 300;
+        color: black;
+    }
+
+    .container{
+        background-color: #6982A4;
+        border-radius: 15px;
+        padding: 0 3% 3%;
+
+        table{
+            border-bottom: solid 2px #e3b767;
+            margin-top: 100px;
+
+            thead{
+                border-bottom: solid 2px #e3b767;
+                
+                h1{
+                    color: white;
+                }
+
+                th{
+                    border-right: solid 2px #e3b767;
+                }
+            }
+
+            tbody{
+                
+                td{
+                    border-right: solid 2px #e3b767;
+                    padding: 1%;
+                    max-width: calc(100% /2);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+.benefit{
+    width: 100%;
+
+    .svg_hero{
+        width: 100%;
+        
+        img{
+            width: 100%;
+            background-size: contain;
+        }
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 5% ;
+
+        .title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h4{
+                font-size: 20px;
+                font-weight: 300;
+            }
+            h1{
+                text-align: center;
+                font-weight: 600;
+
+                b{
+                    font-weight: inherit;
+                    color: #E3B767;
+                }
+            }
+        }
+
+        .benefits{
+            width: 100%;
+            display: flex;
+            gap: 5%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding-top: 100px;
+
+            #wrapper{
+                min-width: 25%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            
+
+            #card{
+                min-width: 100%;
+                flex-wrap: wrap; 
+                border: none;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                #benefit_img{
+                    width: 107px;
+                    height: 104px;
+                }
+
+                #benefit_title{
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+                
+                p{
+                    text-align: left !important;
+                    margin-top: 20px;
+                }
+            }
+
+        }
+        }
+    }
+
+    .customers{
+        width: max-content;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 45px;
+        flex-direction: row;
+        gap: 5px;
+        margin-top: 50px;
+        font-weight: 500;
+        padding: 2% 0;
+        // border: solid 2px black;
+        border-radius: 12px;
+
+
+        h4{
+            margin: 0 0 0 0;
+            font-size: inherit;
+
+            b{
+                font-weight: unset;
+                color: #E3B767;
+            }
+        }
+
+        h5{
+            width: 100%;
+            align-self: center;
+            text-align: center;
+            font-weight: 300;
+            
+            a{
+                color: black !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+@import "../../app.scss";
+
+.referenzen{
+    width: 100%;
+
+    .gradient{
+        width: 100%;
+        background-size: contain;
+        
+        img{
+            width: 100%;
+        }
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        @include mobile{
+            padding: 0 5%;
+        }
+
+        .title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h6{
+                font-size: 18px;
+                font-weight: 300;
+            }
+
+            h1{
+                font-size: 45px;
+                font-weight: 600;
+
+                b{
+                    font-weight: inherit;
+                    color: #E3B767;
+                }
+            }
+        }
+
+        .portfolio{
+            padding: 0 10%;
+            
+            @include mobile{
+                padding: 0 ;
+            }
+
+            #carousel{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+
+                .carousel-indicators{
+                    display: none !important;
+                }
+               
+
+                #carousel_item{
+                    padding: 60px;
+                    border-radius: 23px;
+
+                    @include mobile{
+                        padding: 0;
+                        min-width: 100%;
+                    }
+                    
+                    
+
+                    #CarouselCard{
+                        display: flex;
+                        flex-direction: row-reverse;
+                        justify-content: center;
+                        gap: 10%;
+
+                        @include mobile{
+                            flex-direction: column;
+                            padding: 10% 0;
+                        }
+
+                        
+                        
+                        .info{
+                            max-width: 35%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 30px;
+                            align-items: center;
+                            justify-content: center;
+
+                            @include mobile{
+                                max-width: 80%;
+                                align-self: center;
+                                gap: 10px;
+                            }
+
+                            h1{
+                                font-size: 35px;
+                                text-align: center;
+
+                                @include mobile{
+                                    font-size: 30px;
+                                }
+                            }
+
+                            p{
+                                @include mobile{
+                                    font-size: 14px;
+                                    max-width: 90%;
+                                }
+                            }
+
+
+                        }
+
+                        .image{
+                            width: 40%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            @include mobile{
+                                width: 100%;
+                            }
+
+                            img{
+                                height: auto;
+                                max-height: 400px;
+                                width: 100%;
+                                object-fit: cover;
+                                border-radius: 12px;
+
+                                @include mobile{
+                                    height: 200px;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
